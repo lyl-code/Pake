@@ -21,7 +21,7 @@ console.log('safe-domain: ', process.env.SAFE_DOMAIN);
 console.log('===========================\n');
 
 cd('node_modules/pake-cli');
-let params = `node cli.js ${process.env.URL} --name ${process.env.NAME} --height ${process.env.HEIGHT} --width ${process.env.WIDTH} --inject src-tauri/style/uni-im.css`;
+let params = `node cli.js ${process.env.URL} --name ${process.env.NAME} --height ${process.env.HEIGHT} --width ${process.env.WIDTH}`;
 
 if (process.env.HIDE_TITLE_BAR === 'true') {
   params = `${params} --hide-title-bar`;
@@ -66,7 +66,7 @@ const main = async () => {
         iconFile = 'icon.png';
         break;
       case 'darwin':
-        iconFile = 'uni-im.icns';
+        iconFile = 'icon.icns';
         break;
       case 'win32':
         iconFile = 'icon.ico';
