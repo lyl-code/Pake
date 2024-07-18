@@ -23,5 +23,5 @@
     "linux": true,
     "windows": true
   },
-  "inject": ["./style/uni-im.css"]
+  "inject": []
 }
