@@ -66,7 +66,7 @@ const main = async () => {
         iconFile = 'icon.png';
         break;
       case 'darwin':
-        iconFile = 'uni-im.icns';
+        iconFile = 'icon.icns';
         break;
       case 'win32':
         iconFile = 'icon.ico';
@@ -76,9 +76,9 @@ const main = async () => {
         process.exit(1);
     }
 
-    params = `${params} --icon ../../src-tauri/icons/${iconFile}`
+    // params = `${params} --icon ../../src-tauri/icons/${iconFile}`
 
-    // params = await downloadIcon(iconFile);
+    params = await downloadIcon(iconFile);
   } else {
     console.log("Won't download the icon as ICON environment variable is not defined!");
   }
