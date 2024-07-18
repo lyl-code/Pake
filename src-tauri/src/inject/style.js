@@ -417,4 +417,15 @@ window.addEventListener('DOMContentLoaded', _event => {
     topPaddingStyleElement.innerHTML = topPaddingCSS;
     document.head.appendChild(topPaddingStyleElement);
   }
+
+  // 隐藏顶部提示条
+  const hideTopTipsCSS = `
+    #tip-browser-compatibility {
+      display: none;
+      visibility: hidden;
+    }
+  `;
+  const hideTopTipsStyleElement = document.createElement('style');
+  hideTopTipsStyleElement.innerHTML = hideTopTipsCSS;
+  document.head.appendChild(hideTopTipsStyleElement);
 });
