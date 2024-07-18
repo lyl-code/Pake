@@ -11,7 +11,7 @@ export const DEFAULT_PAKE_OPTIONS: PakeCliOptions = {
   disabledWebShortcuts: false,
   activationShortcut: '',
   userAgent: '',
-  showSystemTray: false,
+  showSystemTray: true,
   multiArch: false,
   targets: 'deb',
   useLocalFile: false,
