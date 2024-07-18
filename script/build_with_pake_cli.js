@@ -66,7 +66,7 @@ const main = async () => {
         iconFile = 'icon.png';
         break;
       case 'darwin':
-        iconFile = 'icon.icns';
+        iconFile = 'uni-im.icns';
         break;
       case 'win32':
         iconFile = 'icon.ico';
